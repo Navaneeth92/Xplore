@@ -1,0 +1,10 @@
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\App.g.i.cs
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\App.g.cs
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\Common\StandardStyles.g.i.cs
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\Common\StandardStyles.g.cs
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\MainPage.g.i.cs
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\MainPage.g.cs
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\XamlTypeInfo.g.cs
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\App.xaml
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\Common\StandardStyles.xaml
+c:\users\navaneeth\documents\visual studio 2012\Projects\Xplore\Xplore\obj\Debug\MainPage.xaml

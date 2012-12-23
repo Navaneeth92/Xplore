@@ -1,0 +1,97 @@
+﻿<Page
+    x:Class="Xplore.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Xplore"
+    xmlns:Maps="using:Bing.Maps"
+    xmlns:cfo="using:CharmFlyoutLibrary"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" BorderBrush="#FFBCCFF0" Foreground="#FFBCCFF0" Background="#FFBCCFF0">
+    
+    <Page.TopAppBar>
+        
+        <AppBar IsOpen="True" Background="#FFBCCFF0" Opacity="0.75">
+           
+           <Grid>
+               
+                <Grid.ColumnDefinitions>
+                  
+            
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" Background="#FFBCCFF0" Grid.ColumnSpan="3" Opacity="0.75">
+                <RadioButton x:ConnectionId='2' x:Name="rdLocation" Content="By Locations" GroupName="Nav"                               BorderBrush="#FF1D25CF" Foreground="#FF1D57F3"/>
+                    <RadioButton x:ConnectionId='3' x:Name="rdCoord" Content="By Coordinates" GroupName="Nav" IsChecked="True"                           BorderBrush="#FF1D25CF" Foreground="#FF1D57F3"/>
+                    
+                </StackPanel>
+                <StackPanel Margin="1144,10,0,10">
+                    <Image x:ConnectionId='1' Height="63" Width="75" Source="Button-Help-icon.png"                       Margin="64,0,63,0"></Image>
+                </StackPanel>
+                <TextBlock FontSize="70" Foreground="#FF8059C3" FontFamily="Matura MT Script Capitals" Margin="507,0,351,0" >Bing XPlore</TextBlock>
+
+                <cfo:CharmFlyout x:Name="about" Background="Pink" >
+                    <StackPanel>
+                    <TextBlock x:Name="About" Text="navaneeth.a@msn.com" FontSize="36" Foreground="Red">
+                       
+                    </TextBlock>
+                    </StackPanel>
+                </cfo:CharmFlyout>
+
+
+            </Grid>
+            
+        </AppBar>
+      
+    </Page.TopAppBar>
+    <Page.BottomAppBar >
+        <AppBar IsOpen="True" Background="#FFBCCFF0" BorderThickness="5" >
+            <StackPanel Grid.Column="1" Background="#FFBCCFF0" Orientation="Horizontal" Opacity="0.77">
+                <Button x:ConnectionId='4' x:Name="btnGiveDirections" Content="Give Directions"                                  Foreground="#FFFF1717" FontSize="20" BorderThickness="0"/>
+                <Button x:ConnectionId='5' Height="50" Width="162" Content="Where Am I?" FontSize="20" Foreground="Red" BorderThickness="0"                    ></Button>
+                <Grid x:Name="grdCoord"  >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Source Coordinate :" Grid.Row="1" FontSize="20" Margin="10,0,-10,18" Foreground="#FF2559E4"/>
+                    <TextBlock Text="Destination Coordinate :" Grid.Row="1" FontSize="20" Margin="518,0,-518,18" Foreground="#FF2559E4"/>
+                    <TextBox x:Name="txtFromCoord" Grid.Row="1" Margin="229,0,-229,10"/>
+                    <TextBox x:Name="txtToCoord" Margin="754,0,-754,10" Grid.Row="1"/>
+                </Grid>
+
+
+                <Grid x:Name="grdLocation"  Visibility="Collapsed" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Source Location :" Grid.Row="3" FontSize="20" Margin="395,0,-395,9" Foreground="#FF133EFF"/>
+                    <TextBlock Text="Destination :" Grid.Row="3" FontSize="20" Margin="39,0,-31,0" Foreground="#FF133EFF"/>
+                    <TextBox x:Name="txtFromLocation" Grid.Row="3" Margin="584,0,-584,7"/>
+                    <TextBox x:Name="txtToLocation" Grid.Row="3" Margin="182,0,-182,8"/>
+                </Grid>
+                <TextBlock x:Name="tbError" FontSize="20" Margin="0,20,0,0" />
+            </StackPanel>
+
+        </AppBar>
+    </Page.BottomAppBar>
+   
+
+
+
+    <Maps:Map x:ConnectionId='6' x:Name="NavMaps" Credentials="ArX4GVyV4D99HmDfo9BTLHAcrXOyezQUJNu-ol8mqy2sQXKMen6pzFq_Hv76m8nw"                      >
+        <Maps:Pushpin x:Name="Push" Background="Red" BorderBrush="BurlyWood" Height="20" Width="20" ></Maps:Pushpin>
+        <Maps:Pushpin x:Name="Push2"  Background="Green" BorderBrush="BurlyWood" Height="20" Width="20" ></Maps:Pushpin>
+    </Maps:Map>
+
+
+ 
+       
+
+
+</Page>
+

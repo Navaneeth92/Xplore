@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Xplore.Help"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Xplore"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FFD48D8D" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Background>
+
+    <Grid Background="#FFE23A3A">
+        <StackPanel>
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFEEA1"/>
+                    <GradientStop Color="#FFF0E6DA" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock TextWrapping="Wrap" Text=" How To Use The App ??" Height="65" FontSize="35" FontFamily="Lucida Handwriting" Foreground="#FFFF5100"/>
+            <TextBlock TextWrapping="Wrap" Text=" 1 ) Select 'By Locations' radio button in Top App Bar . Enter The source Place name and Destination Place Name in the textbox visible in bottom App Bar and Click 'Give Directions' Button to get Directions."  FontSize="35" FontFamily="Lucida Handwriting" Foreground="#FF00C0FF"/>
+            <TextBlock TextWrapping="Wrap" Text=" 2 ) Select 'By Coordinates' radio button in Top App Bar . Enter The source coordinate and  destination Coordinate  in the form 'latitude,longitude' at the textbox visible in bottom App Bar and Click 'Give Directions Button' to get Directions."  FontSize="35" FontFamily="Lucida Handwriting" Foreground="#FF00C0FF"/>
+            <TextBlock TextWrapping="Wrap" Text=" 3)Tap anywhere on the map to set a push pin , it is considered as start point . Tap once again ont the map to set the destination pushpin and the directions are displayed."  FontSize="35" FontFamily="Lucida Handwriting" Foreground="#FF00C0FF"/>
+            <TextBlock TextWrapping="Wrap" Text=" 4)To Get Current Location 'Click Where Am I?'Button." Height="56" FontSize="35" FontFamily="Lucida Handwriting" Foreground="#FF00C0FF"/>
+            <Button x:ConnectionId='1' Content="Go Back !!" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="89" FontSize="50" Background="#FF23361A"                    />
+        </StackPanel>
+    </Grid>
+</Page>
+

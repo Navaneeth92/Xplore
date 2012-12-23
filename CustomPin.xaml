@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="Xplore.CustomPin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BingDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Canvas>
+        <Path x:Name="border" 
+        Stretch="Fill" Data="F1 M 0,217.042L 227.5,217.042L 297.875, 0L 367.542,217L 595.542,217L 410.208,353.667L 480.708,
+        569.667L 297.208,436.667L 116.208,568.167L 185.708,352.667L 0,217.042 Z" Width="50" Height="50"
+        Fill="Yellow" Stroke="Red" Canvas.Left="-22.276" Canvas.Top="-26.282" UseLayoutRounding="False"/>
+    </Canvas>
+</UserControl>
